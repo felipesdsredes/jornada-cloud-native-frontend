@@ -1,5 +1,5 @@
-import { AppBar, Toolbar } from "@material-ui/core"
-import { StyledNavbarOption, StyledNavbarTitle } from "./styles"
+import { Toolbar } from "@material-ui/core"
+import { StyledNavbarOption, StyledNavbarTitle, StyledAppBar } from "./styles"
 
 type HeaderProps = {
   title: string
@@ -7,7 +7,10 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   return (
-    <AppBar position="static">
+    <StyledAppBar
+      position="absolute"
+      style={{ background: "transparent", boxShadow: "none" }}
+    >
       <Toolbar>
         <StyledNavbarTitle variant="h6">{props.title}</StyledNavbarTitle>
         <StyledNavbarOption id="navbar-home" color="inherit">
@@ -17,7 +20,7 @@ const Header = (props: HeaderProps) => {
           About
         </StyledNavbarOption>
       </Toolbar>
-    </AppBar>
+    </StyledAppBar>
   )
 }
 
