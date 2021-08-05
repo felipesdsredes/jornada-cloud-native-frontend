@@ -2,19 +2,20 @@ import styled from "styled-components"
 import { Button, Typography, AppBar } from "@material-ui/core"
 
 export const StyledAppBar = styled(AppBar)`
-  padding-top: 20px;
-  margin-left: 100px;
+  box-shadow: none;
   position: fixed !important;
-  background-color: black !important;
+  background-color: #e1e1e3 !important;
+  margin: 0;
+  padding-top: 20px;
 `
 
 export const StyledNavbarTitle = styled(Typography)`
   font-family: Helvetica, Arial, sans-serif !important;
   font-weight: bold !important;
-  color: white;
+  color: black;
 `
 
 export const StyledNavbarOption = styled(Button)`
-  color: white !important;
+  color: black !important;
   margin-left: 60px !important;
 `
