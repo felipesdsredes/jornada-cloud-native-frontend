@@ -7,10 +7,7 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   return (
-    <StyledAppBar
-      position="absolute"
-      style={{ background: "transparent", boxShadow: "none" }}
-    >
+    <StyledAppBar style={{ boxShadow: "none" }}>
       <Toolbar>
         <StyledNavbarTitle variant="h6">{props.title}</StyledNavbarTitle>
         <StyledNavbarOption id="navbar-home" color="inherit">

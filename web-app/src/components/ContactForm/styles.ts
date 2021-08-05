@@ -8,5 +8,6 @@ export const StyledFormButton = styled(Button)`
 
 export const StyledTextField = styled(TextField)`
   width: 500px !important;
-  background-color: #efefef !important;
+  color: white !important;
+  background-color: #e1e1e3 !important;
 `
