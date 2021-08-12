@@ -1,5 +1,5 @@
 body {
-  background-color: #e1e1e3;
+  background-color: var(--primary);
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   overflow: auto;
@@ -11,4 +11,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --primary: #015c92;
+  --secondary: #2d8285;
+  --tertiary: #fb6602;
+  --quaternary: #88cdf6;
+  --quinary: #bce6ff;
+
+  --white: #fff;
+  --gray: #8a8c90;
+
+  --black: #000;
 }

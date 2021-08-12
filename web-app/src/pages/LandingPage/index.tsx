@@ -5,6 +5,7 @@ import {
   StyledContactForm,
   StyledMessage,
   StyledMessageAndFormDiv,
+  StyledPhotoDiv
 } from "./styles"
 import { Strings } from "../../strings"
 import livro from "../../assets/images/livro.jpg"
@@ -16,7 +17,9 @@ export const LandingPage = (props: LandingPageProps) => {
     <StyledContainer maxWidth={false}>
       <StyledTitle>{Strings.LadingPageTitle}</StyledTitle>
       <StyledContactDiv>
-        <img src={livro} alt="livro" />
+        <StyledPhotoDiv>
+          <img src={livro} alt="livro" />
+        </StyledPhotoDiv>
         <StyledMessageAndFormDiv>
           <StyledMessage>{Strings.LandingPageMessage}</StyledMessage>
           <StyledContactForm />

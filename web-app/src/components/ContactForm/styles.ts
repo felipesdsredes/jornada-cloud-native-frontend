@@ -2,12 +2,20 @@ import styled from "styled-components"
 import { TextField, Button } from "@material-ui/core"
 
 export const StyledFormButton = styled(Button)`
-  margin-left: 420px !important;
-  margin-top: 40px !important;
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
 `
 
 export const StyledTextField = styled(TextField)`
-  width: 500px !important;
-  color: white !important;
-  background-color: #e1e1e3 !important;
+  color: var(--black);
+  background-color: var(--white);
+  margin-bottom: 8px !important;
+  border-radius: 10px;
+`
+
+export const StyledForm = styled.form`
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `

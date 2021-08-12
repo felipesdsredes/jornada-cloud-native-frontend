@@ -1,20 +1,15 @@
-import { StyledFormButton, StyledTextField } from "./styles"
+import { StyledFormButton, StyledTextField, StyledForm } from "./styles"
 
 export const ContactForm = () => {
   return (
-    <form>
-      <StyledTextField label="Nome Completo" />
-      <br />
-      <StyledTextField label="Email" type="email" />
-      <br />
+    <StyledForm>
+      <StyledTextField required label="Nome Completo" placeholder="Vinicius Marques Finger" variant="outlined" />
+      <StyledTextField required label="Email" placeholder="vinicius.finger@email.com" type="email" variant="outlined" />
       <StyledFormButton
-        variant="contained"
-        size="medium"
-        color="primary"
         type="submit"
       >
         Enviar
       </StyledFormButton>
-    </form>
+    </StyledForm>
   )
 }
